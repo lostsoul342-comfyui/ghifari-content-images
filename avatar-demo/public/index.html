@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avatar Demo</title>
+  <link rel="preconnect" href="https://api.anam.ai" />
+  <link rel="modulepreload" href="https://esm.sh/@anam-ai/js-sdk@latest" />
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; }
+    video { width: 100%; border-radius: 12px; background: #111; }
+    button { font-size: 16px; padding: 10px 18px; margin-top: 12px; cursor: pointer; }
+    #status { color: #666; margin-top: 8px; font-size: 14px; }
+    #log { margin-top: 16px; white-space: pre-wrap; font-size: 14px; color: #333; }
+  </style>
+</head>
+<body>
+  <h1>Avatar Demo</h1>
+  <video id="avatar-video" autoplay playsinline></video>
+  <button id="start">Start talking</button>
+  <div id="status">Not started.</div>
+  <div id="log"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
